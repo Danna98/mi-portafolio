@@ -6,11 +6,13 @@
     <title>Danna Ximena Torres Sanabria - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
+                <li><a href="#presentacion" class="nav-link">Inicio</a></li>
                 <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
                 <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
                 <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
@@ -21,11 +23,13 @@
     </header>
 
     <main>
-        <section id="presentacion">
-            <div class="container">
+        <section id="presentacion" class="slide">
+            <div class="container" data-aos="fade-up">
                 <h1 class="creative-title">Danna Ximena Torres Sanabria</h1>
-                <p class="subtitle">Química Farmacéutica | Analista de Asuntos Regulatorios | Desarrolladora Web</p>
-                <img src="Fotografia Digital.jpg" alt="Danna Ximena Torres Sanabria" class="profile-pic">
+                <p class="subtitle">👩‍🔬 Química Farmacéutica | 📊 Analista de Asuntos Regulatorios | 💻 Desarrolladora Web</p>
+                <div class="profile-container">
+                    <img src="Fotografia Digital.jpg" alt="Danna Ximena Torres Sanabria" class="profile-pic">
+                </div>
                 <div class="redes-sociales">
                     <a href="https://www.linkedin.com/in/dannaximenatorres/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/danna98" target="_blank"><i class="fab fa-github"></i></a>
@@ -33,19 +37,19 @@
             </div>
         </section>
 
-        <section id="sobre-mi">
-            <div class="container">
-                <h2 class="section-title">Sobre mí</h2>
-                <p>Soy una Química Farmacéutica proactiva con experiencia en asuntos regulatorios para medicamentos químicos sintéticos, biológicos y cosméticos. Mi experiencia abarca la industria farmacéutica y el INVIMA. Actualmente, gestiono procesos regulatorios para una cartera diversa de productos medicinales en países sudamericanos, mientras expando mis horizontes en el mundo del desarrollo web.</p>
+        <section id="sobre-mi" class="slide">
+            <div class="container" data-aos="fade-right">
+                <h2 class="section-title">Sobre mí 🌟</h2>
+                <p>Soy una Química Farmacéutica proactiva con experiencia en asuntos regulatorios para medicamentos químicos sintéticos, biológicos y cosméticos. Mi experiencia abarca la industria farmacéutica y el INVIMA. Actualmente, gestiono procesos regulatorios para una cartera diversa de productos medicinales en países sudamericanos, mientras expando mis horizontes en el mundo del desarrollo web. 🚀</p>
             </div>
         </section>
 
-        <section id="experiencia">
-            <div class="container">
-                <h2 class="section-title">Experiencia Profesional</h2>
+        <section id="experiencia" class="slide">
+            <div class="container" data-aos="fade-left">
+                <h2 class="section-title">Experiencia Profesional 💼</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3>Analista de Asuntos Regulatorios</h3>
+                        <h3>🏢 Analista de Asuntos Regulatorios</h3>
                         <p>Sicmafarma S.A.S. | 09/2023 - presente</p>
                         <ul>
                             <li>Gestión de procesos regulatorios para 157 medicamentos en Venezuela, Ecuador, Bolivia y Paraguay.</li>
@@ -53,7 +57,7 @@
                         </ul>
                     </div>
                     <div class="timeline-item">
-                        <h3>Pasante de Asuntos Regulatorios</h3>
+                        <h3>🎓 Pasante de Asuntos Regulatorios</h3>
                         <p>INVIMA | 02/2023 - 06/2023</p>
                         <ul>
                             <li>Análisis y ejecución de actos administrativos relacionados con modificaciones de bajo riesgo.</li>
@@ -64,48 +68,55 @@
             </div>
         </section>
 
-        <section id="habilidades">
-            <div class="container">
-                <h2 class="section-title">Habilidades</h2>
+        <section id="habilidades" class="slide">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Habilidades 🛠️</h2>
                 <div class="skills-container">
-                    <div class="skill-item"><i class="fas fa-capsules"></i> Asuntos Regulatorios</div>
-                    <div class="skill-item"><i class="fas fa-file-alt"></i> Gestión de Documentos</div>
-                    <div class="skill-item"><i class="fas fa-flask"></i> Análisis Químico</div>
-                    <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
-                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
-                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="skill-item"><i class="fas fa-language"></i> Inglés B2</div>
+                    <div class="skill-item">👩‍⚕️ Asuntos Regulatorios</div>
+                    <div class="skill-item">📄 Gestión de Documentos</div>
+                    <div class="skill-item">🧪 Análisis Químico</div>
+                    <div class="skill-item">🌐 HTML</div>
+                    <div class="skill-item">🎨 CSS</div>
+                    <div class="skill-item">⚙️ JavaScript</div>
+                    <div class="skill-item">🌎 Inglés B2</div>
                 </div>
             </div>
         </section>
 
-        <section id="proyectos">
-            <div class="container">
-                <h2 class="section-title">Proyectos</h2>
+        <section id="proyectos" class="slide">
+            <div class="container" data-aos="fade-right">
+                <h2 class="section-title">Proyectos 🚀</h2>
                 <div class="proyecto-item">
-                    <h3>Encriptador de Texto</h3>
+                    <h3>🔐 Encriptador de Texto</h3>
                     <p>Un proyecto de encriptación y desencriptación desarrollado como parte del Alura Challenge.</p>
                     <a href="https://danna98.github.io/alura-challenge-encriptador/" target="_blank" class="btn">Ver proyecto</a>
                 </div>
             </div>
         </section>
 
-        <section id="contacto">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
+        <section id="contacto" class="slide">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Contacto 📬</h2>
                 <form id="contactForm">
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <textarea placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn">Enviar</button>
+                    <input type="email" placeholder="Tu correo electrónico 📧" required>
+                    <textarea placeholder="Tu mensaje 💬" required></textarea>
+                    <button type="submit" class="btn">Enviar 📤</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Danna Ximena Torres Sanabria. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Danna Ximena Torres Sanabria. Todos los derechos reservados. 🎉</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

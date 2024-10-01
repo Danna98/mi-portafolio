@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #FF69B4;
-    --secondary-color: #FFD700;
+    --primary-color: #00A8E8;
+    --secondary-color: #4AE3B5;
     --text-color: #333;
-    --background-color: #FFF0F5;
-    --accent-color: #00CED1;
+    --background-color: #E8F9FD;
+    --accent-color: #0077B6;
 }
 
 body {
@@ -62,6 +62,11 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 h1, h2, h3 {
@@ -70,20 +75,21 @@ h1, h2, h3 {
 
 #presentacion {
     text-align: center;
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
     padding: 40px 0;
 }
 
 .profile-pic {
     width: 200px;
     border-radius: 50%;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--background-color);
     margin-bottom: 20px;
 }
 
 .redes-sociales a {
     margin: 0 10px;
-    color: var(--primary-color);
+    color: var(--background-color);
     font-size: 24px;
     transition: color 0.3s ease;
 }
@@ -100,11 +106,17 @@ h1, h2, h3 {
 }
 
 .skill-item {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .btn {
@@ -138,6 +150,36 @@ footer {
     color: var(--background-color);
     text-align: center;
     padding: 10px 0;
+}
+
+/* Animaciones y efectos adicionales */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-out;
+}
+
+.skill-item, .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-item::after, .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
+}
+
+.skill-item:hover::after, .btn:hover::after {
+    left: 100%;
 }
 
 @media (max-width: 768px) {

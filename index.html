@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danna Ximena Torres Sanabria - Portafolio</title>
+    <title>Danna Ximena Torres Sanabria - Portafolio Creativo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
@@ -21,61 +23,71 @@
 
     <main>
         <section id="presentacion">
-            <h1>Danna Ximena Torres Sanabria</h1>
-            <p>Químico Farmacéutico | Analista de Asuntos Regulatorios | Desarrolladora Web</p>
-            <img src="tu-foto.jpg" alt="Danna Ximena Torres Sanabria">
-            <div class="redes-sociales">
-                <a href="https://www.linkedin.com/in/dannaximenatorres/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/danna98" target="_blank">GitHub</a>
+            <div class="container">
+                <h1>Danna Ximena Torres Sanabria</h1>
+                <p class="subtitle">Química Farmacéutica | Analista de Asuntos Regulatorios | Desarrolladora Web</p>
+                <img src="tu-foto.jpg" alt="Danna Ximena Torres Sanabria" class="profile-pic">
+                <div class="redes-sociales">
+                    <a href="https://www.linkedin.com/in/dannaximenatorres/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/danna98" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </section>
 
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Soy una Química Farmacéutica proactiva con experiencia en asuntos regulatorios para medicamentos químicos sintéticos, biológicos y cosméticos. Mi experiencia abarca la industria farmacéutica y el INVIMA. Actualmente, gestiono procesos regulatorios para una cartera diversa de productos medicinales en países sudamericanos. Además, estoy expandiendo mis habilidades en el desarrollo web, combinando mi experiencia en el sector farmacéutico con nuevas competencias tecnológicas.</p>
+            <div class="container">
+                <h2><i class="fas fa-flask"></i> Sobre mí</h2>
+                <p>Soy una Química Farmacéutica apasionada por los asuntos regulatorios y el desarrollo web. Mi experiencia abarca desde la industria farmacéutica hasta el INVIMA, y ahora estoy expandiendo mis horizontes en el mundo de la programación.</p>
+            </div>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia Profesional</h2>
-            <div class="experiencia-item">
-                <h3>Analista de Asuntos Regulatorios</h3>
-                <p>Sicmafarma S.A.S. | 09/2023 - presente</p>
-                <ul>
-                    <li>Gestión de procesos regulatorios para 157 medicamentos químicos sintéticos en Venezuela, Ecuador, Bolivia y Paraguay.</li>
-                    <li>Desarrollo e implementación de estrategias regulatorias para nuevos registros, indicaciones, renovaciones y variaciones.</li>
-                </ul>
+            <div class="container">
+                <h2><i class="fas fa-briefcase"></i> Experiencia Profesional</h2>
+                <div class="experiencia-item">
+                    <h3>Analista de Asuntos Regulatorios</h3>
+                    <p>Sicmafarma S.A.S. | 09/2023 - presente</p>
+                    <ul>
+                        <li>Gestión de procesos regulatorios para 157 medicamentos en Sudamérica</li>
+                        <li>Desarrollo de estrategias para nuevos registros y variaciones</li>
+                    </ul>
+                </div>
             </div>
-            <!-- Añadir más experiencias según sea necesario -->
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Asuntos Regulatorios</li>
-                <li>Gestión de Documentos</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Inglés intermedio (B2)</li>
-                <li>Microsoft Office Suite</li>
-            </ul>
+            <div class="container">
+                <h2><i class="fas fa-cogs"></i> Habilidades</h2>
+                <div class="skills-container">
+                    <div class="skill-item"><i class="fas fa-file-medical-alt"></i> Asuntos Regulatorios</div>
+                    <div class="skill-item"><i class="fas fa-folder-open"></i> Gestión de Documentos</div>
+                    <div class="skill-item"><i class="fas fa-code"></i> HTML, CSS, JavaScript</div>
+                    <div class="skill-item"><i class="fas fa-language"></i> Inglés intermedio (B2)</div>
+                    <div class="skill-item"><i class="fas fa-file-word"></i> Microsoft Office Suite</div>
+                </div>
+            </div>
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
-            <div class="proyecto-item">
-                <h3>Encriptador de Texto</h3>
-                <p>Un proyecto de encriptación y desencriptación de texto desarrollado como parte del Alura Challenge.</p>
-                <a href="https://danna98.github.io/alura-challenge-encriptador/" target="_blank">Ver proyecto</a>
+            <div class="container">
+                <h2><i class="fas fa-project-diagram"></i> Proyectos</h2>
+                <div class="proyecto-item">
+                    <h3>Encriptador de Texto</h3>
+                    <p>Un proyecto de encriptación y desencriptación desarrollado como parte del Alura Challenge.</p>
+                    <a href="https://danna98.github.io/alura-challenge-encriptador/" target="_blank" class="btn">Ver proyecto</a>
+                </div>
             </div>
-            <!-- Añadir más proyectos según sea necesario -->
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
-            <form id="contactForm">
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <textarea placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="container">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <form id="contactForm">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <textarea placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
